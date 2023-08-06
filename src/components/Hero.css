@@ -1,0 +1,72 @@
+.gradient {
+  background: -webkit-linear-gradient(
+    360deg,
+    #a1fcf8,
+    #49cdc6,
+    #848ef4,
+    #e364f3
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-color {
+  background: rgba(36, 36, 36, 1);
+}
+.text-color {
+  color: rgba(255, 255, 255, 1);
+}
+.color-primary {
+  background-color: rgba(43, 122, 120, 1);
+}
+.text-color-secondary {
+  color: rgba(43, 122, 120, 1);
+}
+.text-color-primary {
+  color: rgba(58, 175, 169, 1);
+}
+.photo {
+  background-image: url("../assets/homepage.png");
+}
+.border {
+  border-color: #49cdc6;
+  margin: auto auto;
+  padding: 10px 25px;
+  width: 10rem;
+  font-weight: 500;
+}
+.color {
+  background-color: #ecf2f6;
+}
+.bg-color-box {
+  background-color: rgba(27, 29, 32, 1);
+}
+.border-button {
+  border-color: #49cdc6;
+  margin: auto;
+  margin-right: 2px;
+  padding: 2px 10px;
+  color: white;
+}
+.play {
+  fill: rgba(43, 122, 120, 1);
+}
+.testimonial-color {
+  color: rgba(16, 18, 21, 0.64);
+}
+.text {
+  color: rgba(16, 18, 21, 0.64);
+}
+.faq {
+  stroke: rgba(43, 122, 120, 1);
+}
+.form-color {
+  border-color: rgba(119, 121, 126, 0.56);
+  border-width: 1px;
+}
+.border-secondary {
+  border-color: rgba(43, 122, 120, 1);
+}
+.newsletter {
+  background-color: rgb(217, 238, 238);
+}

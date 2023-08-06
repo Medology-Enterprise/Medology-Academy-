@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  max-width: 100%;
+}
+body {
+  @apply leading-[normal] m-0;
+}
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+*,
+::before,
+::after {
+  border-width: 0;
+}
