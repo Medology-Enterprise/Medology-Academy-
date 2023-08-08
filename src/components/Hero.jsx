@@ -10,7 +10,6 @@ import {
   ChevronDownIcon,
   ChevronUpIcon,
 } from "@heroicons/react/24/outline";
-
 import logo from "../assets/logo.png";
 import about from "../assets/about.png";
 import courses from "../assets/courses.png";
@@ -27,8 +26,8 @@ import thumbnail from "../assets/thumbnail.png";
 import testimonials from "../assets/testimonials.png";
 import footericon from "../assets/footericon.png";
 import newsletter from "../assets/newsletter.png";
-
 import "./Hero.css";
+import CarouselDisplay from "./Carousel";
 
 const navigation = [
   //Add links
@@ -502,46 +501,7 @@ function Hero() {
               View All Team
             </button>
           </div>
-          <ul
-            role="list"
-            //issue here of responsiveness
-            className="ml-[6rem] w-full mt-10 flex mb-16 gap-4 sm:overflow-hidden mr-0 sm:ml-[2rem] md:ml-[2rem]"
-          >
-            {people.map((person) => (
-              <li
-                key={person.name}
-                className="rounded-2xl bg-color-box px-2 pt-2 pb-4"
-              >
-                <img
-                  className="h-[16rem] w-64 rounded-xl md:h-[14rem] md:w-[18rem] sm:h-[14rem] sm:w-72"
-                  src={person.imageUrl}
-                  alt=""
-                />
-                <div className="flex justify-between">
-                  <h3 className="mt-6 text-lg mb-2 font-semibold leading-7 tracking-tight text-white">
-                    {person.name}
-                  </h3>
-                  <button className="mt-6 border-2 rounded-full border-button text-sm">
-                    {person.role}
-                  </button>
-                </div>
-                <p className="text-sm mb-2 font-semibold leading-6 text-color-primary">
-                  {person.education}
-                </p>
-                <p className="text-sm leading-5 text-white">
-                  {person.description}
-                </p>
-              </li>
-            ))}
-          </ul>
-          <div className="flex justify-center gap-7 items-center">
-            <button className="border-2 text-white text-2xl border-white rounded-full px-2 py-1 w-12 h-12">
-              ←
-            </button>
-            <button className="border-2 text-white text-2xl border-white rounded-full px-2 py-1 w-12 h-12">
-              →
-            </button>
-          </div>
+          <CarouselDisplay />
         </div>
       </div>
 
