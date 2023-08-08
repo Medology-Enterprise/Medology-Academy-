@@ -38,7 +38,7 @@ const CarouselDisplay = () => {
               <div
                 className={`${
                   hasPrev ? "absolute" : "hidden"
-                } top-[25rem] bottom-20 left-[35rem] flex justify-center items-end hover:opacity-100 cursor-pointer z-30`}
+                } top-[28rem] bottom-20 left-[35rem] flex justify-center items-end hover:opacity-100 cursor-pointer z-30`}
                 onClick={clickHandler}
               >
                 <button className="border-2 text-white text-2xl border-white rounded-full px-2 py-1 w-12 h-12">
@@ -52,7 +52,7 @@ const CarouselDisplay = () => {
               <div
                 className={`${
                   hasNext ? "absolute" : "hidden"
-                } top-[25rem] bottom-20 right-[35rem] flex justify-center items-end hover:opacity-100 cursor-pointer z-30`}
+                } top-[28rem] bottom-20 right-[35rem] flex justify-center items-end hover:opacity-100 cursor-pointer z-30`}
                 onClick={clickHandler}
               >
                 <button className="border-2 text-white text-2xl border-white rounded-full px-2 py-1 w-12 h-12">
@@ -61,12 +61,12 @@ const CarouselDisplay = () => {
               </div>
             );
           }}
-          className="flex overflow-hidden mb-20"
+          className="flex overflow-hidden h-[30rem] "
         >
           {people.map((person) => (
             <div
               key={person.name}
-              className="w-[16rem] rounded-2xl bg-color-box px-2 pt-2 pb-4"
+              className="w-[16rem] h-full rounded-2xl bg-color-box px-2 pt-2 pb-4"
             >
               <img
                 className="h-[16rem] w-64 rounded-xl md:h-[14rem] md:w-[18rem] sm:h-[14rem] sm:w-72"
