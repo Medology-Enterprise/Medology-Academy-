@@ -3,27 +3,59 @@ import React, { useEffect, useRef, useState } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useCarouselLogic } from "./useCarouselLogic";
-
+import aliabrar from "../assets/aliabrar.png";
+import taabishahmed from "../assets/taabishahmed.png";
+import hamzabinmajid from "../assets/hamzabinmajid.png";
+import anant from "../assets/anant.png";
 const CarouselDisplay = () => {
-  const { people, carouselProps } = useCarouselLogic();
-  const [visibility, setVisibility] = useState("visible");
-  const [isVisible, setIsVisible] = useState(false);
-
+  const { carouselProps } = useCarouselLogic();
+  const people = [
+    {
+      name: "Ali Abrar",
+      role: "Dentist",
+      education: "University of Oxford",
+      description:
+        "Lorem ipsum dolor sit amet, elit adipiscing consectetur elit",
+      imageUrl: aliabrar,
+    },
+    {
+      name: "Tabish Ahmed",
+      role: "Dentist",
+      education: "University of Sheffield",
+      description:
+        "Lorem ipsum dolor sit amet, elit adipiscing consectetur elit",
+      imageUrl: taabishahmed,
+    },
+    {
+      name: "Hamza Bin-Majid",
+      role: "Dentist",
+      education: "University of Manchester",
+      description:
+        "Lorem ipsum dolor sit amet, elit adipiscing consectetur elit",
+      imageUrl: hamzabinmajid,
+    },
+    {
+      name: "Anant Dandotiya",
+      role: "Dentist",
+      education: "University of Bristol",
+      description:
+        "Lorem ipsum dolor sit amet, elit adipiscing consectetur elit",
+      imageUrl: anant,
+    },
+    {
+      name: "Kirat Dhillon",
+      role: "Dentist",
+      education: "University of Bristol",
+      description:
+        "Lorem ipsum dolor sit amet, elit adipiscing consectetur elit",
+      imageUrl:
+        "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    },
+    // More people...
+  ];
   return (
     <>
-      <motion.div
-        initial={{ x: "-100vh" }}
-        animate={isVisible ? { x: 0 } : {}}
-        transition={{ ease: easeIn }}
-        // ref={props.entryRef}
-        className={` ${visibility} ml-[40rem] overflow-hidden w-full mt-10`}
-      >
-        <motion.div
-          initial={{ x: "-200vh" }}
-          animate={isVisible ? { x: 0 } : {}}
-          transition={{ delay: 0.5 }}
-          className="flex"
-        ></motion.div>
+      <div className={` visible overflow-hidden w-full mt-10`}>
         <Carousel
           showThumbs={false}
           infiniteLoop={true}
@@ -38,7 +70,7 @@ const CarouselDisplay = () => {
               <div
                 className={`${
                   hasPrev ? "absolute" : "hidden"
-                } top-[28rem] bottom-20 left-[35rem] flex justify-center items-end hover:opacity-100 cursor-pointer z-30`}
+                } sm:top-[32rem] lg:top-[28rem] left-28 bottom-10 sm:left-[15rem] lg:left-[35rem] flex justify-center items-end hover:opacity-100 cursor-pointer z-30`}
                 onClick={clickHandler}
               >
                 <button className="border-2 text-white text-2xl border-white rounded-full px-2 py-1 w-12 h-12">
@@ -52,7 +84,7 @@ const CarouselDisplay = () => {
               <div
                 className={`${
                   hasNext ? "absolute" : "hidden"
-                } top-[28rem] bottom-20 right-[35rem] flex justify-center items-end hover:opacity-100 cursor-pointer z-30`}
+                } sm:top-[32rem] lg:top-[28rem] bottom-10 sm:bottom-20 lg:bottom-20 right-28 sm:right-[15rem] lg:right-[35rem] flex justify-center items-end hover:opacity-100 cursor-pointer z-30`}
                 onClick={clickHandler}
               >
                 <button className="border-2 text-white text-2xl border-white rounded-full px-2 py-1 w-12 h-12">
@@ -61,12 +93,12 @@ const CarouselDisplay = () => {
               </div>
             );
           }}
-          className="flex overflow-hidden h-[30rem] "
+          className="flex overflow-hidden h-[35rem] sm:h-[35rem] lg:h-[30rem] "
         >
           {people.map((person) => (
             <div
               key={person.name}
-              className="w-[16rem] h-full rounded-2xl bg-color-box px-2 pt-2 pb-4"
+              className="lg:w-[16rem] sm:w-[20rem] h-full rounded-2xl bg-color-box px-2 pt-2 pb-4"
             >
               <img
                 className="h-[16rem] w-64 rounded-xl md:h-[14rem] md:w-[18rem] sm:h-[14rem] sm:w-72"
@@ -90,7 +122,7 @@ const CarouselDisplay = () => {
             </div>
           ))}
         </Carousel>
-      </motion.div>
+      </div>
     </>
   );
 };

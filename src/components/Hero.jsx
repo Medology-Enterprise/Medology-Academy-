@@ -38,50 +38,6 @@ const navigation = [
   { name: "Guides", href: "#" },
 ];
 
-const people = [
-  {
-    name: "Ali Abrar",
-    role: "Dentist",
-    education: "University of Oxford",
-    description: "Lorem ipsum dolor sit amet, elit adipiscing consectetur elit",
-    imageUrl:
-      "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-  },
-  {
-    name: "Tabish Ahmed",
-    role: "Dentist",
-    education: "University of Sheffield",
-    description: "Lorem ipsum dolor sit amet, elit adipiscing consectetur elit",
-    imageUrl:
-      "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-  },
-  {
-    name: "Hamza Bin-Majid",
-    role: "Dentist",
-    education: "University of Manchester",
-    description: "Lorem ipsum dolor sit amet, elit adipiscing consectetur elit",
-    imageUrl:
-      "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-  },
-  {
-    name: "Anant Dandotiya",
-    role: "Dentist",
-    education: "University of Bristol",
-    description: "Lorem ipsum dolor sit amet, elit adipiscing consectetur elit",
-    imageUrl:
-      "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-  },
-  {
-    name: "Kirat Dhillon",
-    role: "Dentist",
-    education: "University of Bristol",
-    description: "Lorem ipsum dolor sit amet, elit adipiscing consectetur elit",
-    imageUrl:
-      "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-  },
-  // More people...
-];
-
 const faqs = [
   {
     question: "1. Lorem ipsum dolor sit amet, consectetur?",
@@ -195,7 +151,7 @@ function Hero() {
             <div className="flex lg:flex-1">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">the medology academy</span>
-                <img className="ml-14 h-12 w-48" src={logo} alt="" />
+                <img className="ml-2 lg:ml-14 h-12 w-48" src={logo} alt="" />
               </a>
             </div>
 
@@ -209,7 +165,10 @@ function Hero() {
                 onClick={() => setMobileMenuOpen(true)}
               >
                 <span className="sr-only">Open main menu</span>
-                <Bars3Icon className="h-12 w-12 mr-6" aria-hidden="true" />
+                <Bars3Icon
+                  className="h-12 w-12 mr-2 lg:mr-6"
+                  aria-hidden="true"
+                />
               </button>
             </div>
 
@@ -240,8 +199,8 @@ function Hero() {
             open={mobileMenuOpen}
             onClose={setMobileMenuOpen}
           >
-            <div className="fixed inset-0 z-50" />
-            <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-color px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <div className="fixed inset-0 z-[999]" />
+            <Dialog.Panel className="fixed left-40 inset-y-0 right-0 z-[999] lg:w-full overflow-y-auto bg-color px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
               <button
                 type="button"
                 className="-m-2.5 rounded-md p-2.5 text-white font-semibold absolute right-8"
@@ -356,19 +315,19 @@ function Hero() {
         className="pb-12 sm:pb-16 z-50 color"
       >
         <div className="relative mx-6 px-6 lg:px-6">
-          <div className="-mt-16 lg:mx-80 rounded-lg bg-white transition-all duration-300 xs:mx-auto md:mx-auto sm:mt-10 md:mt-10 sm:mx-auto flex justify-center h-72 border-black">
+          <div className="mt-10 lg:-mt-16 lg:mx-80 rounded-lg bg-white transition-all duration-300 xs:mx-auto md:mx-auto sm:mt-10 md:mt-10 sm:mx-auto flex justify-center h-72 border-black">
             <img
               src={thumbnail}
               alt="img/clips"
               className="relative inset-0 flex object-cover w-full h-full top-0 left-0 right-0 rounded-lg opacity-100 z-10 transition-opacity duration-500"
             />
-            <div className="bg-white/75 blur-effect-theme absolute mx-auto lg:top-28 lg:left-[1rem] sm:top-24 sm:left-5 right-0 opacity-100 z-[100] w-16 h-16 md:w-12 md:h-12 sm:h-14 sm:w-14 flex items-center justify-center rounded-full">
+            <div className="bg-white/75 blur-effect-theme absolute mx-auto top-[6rem] lg:top-28 lg:left-[1rem] sm:top-24 sm:left-30 right-30 lg:right-0 opacity-100 z-50 w-16 h-16 md:w-12 md:h-12 sm:h-14 sm:w-14 flex items-center justify-center rounded-full">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
                 aria-hidden="true"
-                className="icon-style play sm:w-8 sm:h-8 md:w-4 md:h-4 lg:h-8 lg:w-6 text-slate-900"
+                className="icon-style play h-7 w-7 sm:w-8 sm:h-8 md:w-8 md:h-8 lg:h-8 lg:w-6 text-slate-900"
               >
                 <path
                   fillRule="evenodd"
@@ -396,7 +355,7 @@ function Hero() {
             <h2 className="text-sm text-center font-bold leading-7 tracking-widest">
               HOW DO WE <span className="text-color-primary">HELP?</span>
             </h2>
-            <p className="mt-2 lg:text-5xl font-bold tracking-tighter text-gray-900 text-center sm:text-4xl">
+            <p className="mt-2 text-3xl lg:text-5xl font-bold tracking-tighter text-gray-900 text-center sm:text-4xl">
               Sometimes, you just need that
               <span className="text-color-primary"> extra support</span> outside
               of class.
@@ -424,7 +383,9 @@ function Hero() {
                   content, refine your exam technique and make sure you’re on
                   track with revision.
                 </dd>
-                <button className="border rounded-3xl mt-5">Learn More</button>
+                <button className="absolute bottom-3 left-20 lg:bottom-6 lg:left-[8rem] border rounded-3xl mt-5">
+                  Learn More
+                </button>
               </div>
 
               <div className="relative flex flex-col justify-start border-2 rounded-3xl shadow-md -mx-4 h-[20rem] p-10 bg-white sm:left-6">
@@ -440,7 +401,9 @@ function Hero() {
                   you the best advice possible across the entire educational
                   journey.
                 </dd>
-                <button className="border rounded-3xl mt-5">Learn More</button>
+                <button className="absolute bottom-3 left-20 lg:bottom-6 lg:left-[8rem] border rounded-3xl mt-5">
+                  Learn More
+                </button>
               </div>
 
               <div className="relative flex flex-col justify-start border-2 rounded-3xl shadow-md -mx-4 h-[20rem] p-10 bg-white sm:left-6">
@@ -456,7 +419,9 @@ function Hero() {
                   you up with a mentor on our team and place you in safest hands
                   possible to achieve grades.
                 </dd>
-                <button className="border rounded-3xl mt-5">Learn More</button>
+                <button className="absolute bottom-3 left-20 lg:bottom-6 lg:left-[8rem] border rounded-3xl mt-5">
+                  Learn More
+                </button>
               </div>
 
               <div className="relative flex flex-col justify-start border-2 rounded-3xl shadow-md -mx-4 h-[20rem] p-10 bg-white sm:left-6">
@@ -472,7 +437,9 @@ function Hero() {
                   topic? We have it all, and more! You don’t need to go anywhere
                   else.
                 </dd>
-                <button className="border rounded-3xl mt-5">Learn More</button>
+                <button className="absolute bottom-3 left-20 lg:bottom-6 lg:left-[8rem] border rounded-3xl mt-5">
+                  Learn More
+                </button>
               </div>
             </dl>
           </div>
@@ -481,16 +448,16 @@ function Hero() {
       <div //team section
         className="bg-black py-24 md:py-14 sm:py-10"
       >
-        <div className="ml-[4rem] px-2 md:ml-[1rem] sm:ml-[1rem]">
-          <div className="ml-[6rem] max-w-2xl sm:ml-[1rem] md:ml-[1rem]">
+        <div className="ml-4 lg:ml-[4rem] px-2 md:ml-[1rem] sm:ml-[1rem]">
+          <div className="lg:ml-[7rem] max-w-2xl sm:ml-[1rem] md:ml-[1rem]">
             <p className="mt-4 text-sm font-bold leading-8 tracking-widest text-white">
               OUR <span className="text-color-secondary">TEAM</span>
             </p>
-            <h2 className="mt-3 sm:text-4xl font-extrabold tracking-tight text-white lg:text-5xl">
+            <h2 className="mt-3 text-4xl font-extrabold tracking-tight text-white lg:text-5xl">
               <span className="text-color-primary">Who's behind</span> all this?
             </h2>
           </div>
-          <div className="ml-[6rem] px-2 mr-[5rem] gap-x-20 sm:ml-[1rem] md:ml-[1rem] sm:block lg:flex">
+          <div className="lg:ml-[7rem] px-2 mr-[5rem] gap-x-20 sm:ml-[1rem] md:ml-[1rem] sm:block lg:flex">
             <p className="font-light text-white text-base mt-4 ">
               We’re a team of university students across the country with years
               of tutoring experience, and helping students achieve top grades.
@@ -512,14 +479,14 @@ function Hero() {
           <h2 className="text-sm text-center font-bold leading-7 text-color-secondary tracking-widest">
             TESTIMONIALS
           </h2>
-          <p className="mt-2 lg:text-5xl font-bold tracking-tight text-gray-900 text-center sm:text-4xl">
+          <p className="mt-2 lg:text-5xl font-bold tracking-tighter text-gray-900 text-center text-4xl">
             Here's what past
             <span className="text-color-primary"> students</span> <br />
             have to say.
           </p>
         </div>
-        <div className="lg:mx-[23rem] max-w-2xl lg:max-w-4xl sm:mx-4">
-          <figcaption className="mt-10">
+        <div className="lg:mx-[23rem] mx-auto sm:mx-[5rem] max-w-2xl lg:max-w-4">
+          <figcaption className="mt-8">
             <img
               className="mx-auto h-24 w-24 rounded-full border-2 photo"
               src={testimonials}
@@ -527,7 +494,7 @@ function Hero() {
             />
           </figcaption>
           <figure className="-mt-10">
-            <blockquote className="text-center mx-[10rem] shadow-lg rounded-3xl text-base font-normal testimonial-color px-6 sm:text-base py-8 bg-white sm:-mx-6">
+            <blockquote className="text-center sm:ml-2 shadow-lg rounded-3xl text-base font-normal testimonial-color px-6 sm:text-base py-8 bg-white sm:-mx-6">
               <p className="pb-2 pt-4">
                 Medology is the best application company in the world by a long
                 shot. Their support and advice is exquisite. They have supported
@@ -538,7 +505,7 @@ function Hero() {
             </blockquote>
           </figure>
         </div>
-        <div className="flex lg:-mt-[4rem] lg:gap-x-[55rem] sm:justify-center sm:gap-x-8 sm:mt-8">
+        <div className="flex lg:-mt-[4rem] lg:gap-x-[55rem] sm:justify-center sm:gap-x-8 sm:mt-8 mt-4 gap-x-6 -ml-14 sm:ml-4">
           <button className="ml-[10rem] border-2 text-3xl font-bold text-black border-black rounded-full px-4 flex justify-center items-center w-12 h-12">
             ←
           </button>
@@ -556,13 +523,13 @@ function Hero() {
       <div //FAQ section
         className="color"
       >
-        <div className="mx-auto max-w-7xl px-6 py-14 sm:py-4 lg:px-8 lg:py-10">
+        <div className="mx-auto max-w-7xl px-6 py-2 sm:py-4 lg:px-8 lg:py-10">
           <div className="mx-auto max-w-4xl divide-y divide-gray-900/10">
             <div className="mx-auto max-w-2xl lg:text-center">
               <h2 className="text-sm text-center font-bold leading-7 text-color-secondary tracking-widest">
                 FAQ
               </h2>
-              <p className="lg:text-5xl font-bold tracking-tight text-gray-900 text-center sm:text-4xl">
+              <p className="lg:text-5xl font-bold tracking-tight text-gray-900 text-center text-4xl">
                 Frequently Asked
                 <span className="text-color-primary"> Questions</span> <br />
               </p>
@@ -620,7 +587,7 @@ function Hero() {
                 <h2 className="text-sm font-bold leading-7 text-color-secondary tracking-widest">
                   CONTACT US
                 </h2>
-                <p className="lg:text-5xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                <p className="lg:text-5xl font-bold tracking-tight text-gray-900 text-4xl">
                   Got a question?
                   <span className="text-color-primary"> Hit us up.</span> <br />
                 </p>
@@ -629,17 +596,17 @@ function Hero() {
                   back to you as soon as we can!
                 </p>
               </div>
-              <dl className="mt-4 text-base w-[34rem] text-black flex">
-                <button className="mt-6 rounded-full border-teal-600 border-2 color mx-2 px-2 py-3 text-base font-semibold">
+              <dl className="mt-4 text-base w-[34rem] text-black flex gap-x-1 lg:gap-x-2">
+                <button className="mt-6 rounded-full border-teal-600 border-2 color px-1 py-2 lg:px-2 lg:py-3 sm:px-2 sm:py-3 text-base font-semibold">
                   <div className="flex mx-2">
                     <EnvelopeIcon
-                      className="h-4 w-4 my-auto text-black"
+                      className=" w-4 h-4 my-auto text-black"
                       aria-hidden="true"
                     />
-                    <span className="ml-2">Email us</span>
+                    <span className="ml-2 ">Email us</span>
                   </div>
                 </button>
-                <button className="mt-6 rounded-full border-teal-600 border-2 color mx-2 px-2 py-3 text-base font-semibold">
+                <button className="mt-6 rounded-full border-teal-600 border-2 color  lg:px-2 lg:py-3 sm:px-2 sm:py-3 text-base font-semibold">
                   <div className="flex mx-3">
                     <PaperAirplaneIcon
                       className="h-4 w-4 my-auto text-black"
@@ -648,7 +615,7 @@ function Hero() {
                     <span className="ml-2">DM us</span>
                   </div>
                 </button>
-                <button className="mt-6 rounded-full bg-teal-600 mx-2 px-2 py-3 text-base font-semibold">
+                <button className="mt-6 rounded-full bg-teal-600 lg:px-2 lg:py-3 sm:px-2 sm:py-3 text-base font-semibold">
                   <div className="flex mx-2">
                     <ChatBubbleLeftIcon
                       className="h-4 w-4 text-white my-auto"
@@ -660,7 +627,7 @@ function Hero() {
               </dl>
             </div>
           </div>
-          <div className="px-6 py-16 lg:col-span-3 lg:px-28 lg:py-24 xl:pl-20">
+          <div className="px-6 sm:py-4 lg:col-span-3 lg:px-28 lg:py-24 xl:pl-20">
             <div className="mx-auto max-w-lg lg:max-w-none">
               <form
                 action="#"
@@ -724,10 +691,10 @@ function Hero() {
       <div //Newsletter section
         className="color py-12 sm:py-16"
       >
-        <div className="mx-[10rem] max-w-7xl sm:px-2 lg:px-8 sm:mx-[2rem]">
+        <div className="mx-4 lg:mx-[10rem] max-w-7xl sm:px-2 lg:px-8 sm:mx-[2rem]">
           <div className="relative overflow-hidden newsletter px-6 py-16 sm:rounded-3xl sm:px-6">
             <img src={newsletter} alt="" className="mx-auto mb-4" />
-            <h2 className="mx-auto max-w-2xl text-center lg:text-5xl font-bold tracking-tight text-black sm:text-4xl">
+            <h2 className="mx-auto max-w-2xl text-center lg:text-5xl font-bold tracking-tight text-black text-4xl">
               Never miss a thing.
             </h2>
             <p className="mx-auto max-w-xl text-center text-sm text-gray-600 leading-5 my-6">
@@ -770,14 +737,14 @@ function Hero() {
           <div className="mx-auto max-w-7xl px-10 pb-6 pt-6 sm:pt-8 lg:px-4 lg:pt-12">
             <div className="xl:grid xl:grid-cols-3 xl:gap-8">
               <img
-                className="h-28 ml-24 sm:mx-auto sm:mb-4"
+                className="h-28 lg:ml-24 mx-auto sm:mb-4"
                 src={footericon}
                 alt="Company name"
               />
-              <div className="grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0 ml-[20rem] sm:block">
-                <div className="md:grid md:grid-cols-2 md:gap-8 sm:flex sm:justify-between sm:-ml-[16rem]">
-                  <div className="lg:-mt-10">
-                    <h3 className="text-lg text-color-primary font-semibold leading-6 sm:mt-10">
+              <div className="lg:grid lg:grid-cols-2 lg:gap-8 xl:col-span-2 xl:mt-0 ml-[20rem] block">
+                <div className="md:grid md:grid-cols-2 md:gap-8 flex justify-between lg:ml-16 -ml-[20rem] sm:-ml-[16rem]">
+                  <div className="lg:-mt-10 ">
+                    <h3 className="text-lg text-color-primary font-semibold leading-6 mt-10">
                       Menu
                     </h3>
                     <ul role="list" className="mt-4 space-y-3">
@@ -793,7 +760,7 @@ function Hero() {
                       ))}
                     </ul>
                   </div>
-                  <div className="mt-10 md:mt-0 mb-4 ml-24 w-full -mr-[20rem] sm:ml-[14rem]">
+                  <div className="mt-10 md:mt-0 mb-4 lg:ml-24 w-full lg:-mr-[20rem] ml-[10rem] sm:ml-[14rem]">
                     <h3 className="text-lg text-color-primary font-semibold leading-6">
                       Information
                     </h3>
@@ -811,7 +778,7 @@ function Hero() {
                     </ul>
                   </div>
                 </div>
-                <div className="flex items-end lg:ml-[15rem] -mb-4 lg:-mt-6 space-x-6 sm:ml-[4rem] sm:-mt-4">
+                <div className="flex lg:mt-64 lg:right-32 -mb-4 space-x-6 sm:right-20 sm:-mt-4 absolute right-10 ">
                   {navfooter.social.map((item) => (
                     <a
                       key={item.name}
@@ -825,7 +792,7 @@ function Hero() {
                 </div>
               </div>
             </div>
-            <div className="mx-[6rem] mt-14 border-t border-white/10 pt-8 md:flex md:items-center md:justify-between sm:text-center">
+            <div className="lg:mx-[6rem] mt-14 border-t border-white/10 pt-8 md:flex md:items-center md:justify-between sm:text-center">
               <p className="mt-8 font-semibold text-base leading-5 text-gray-400 md:order-1 md:mt-0">
                 &copy; 2023, Medology Ltd | All rights reserved | Powered by
                 <span className="text-color-primary"> Quirky Agency</span>
