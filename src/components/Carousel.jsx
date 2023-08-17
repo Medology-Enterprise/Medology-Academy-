@@ -3,10 +3,10 @@ import React, { useEffect, useRef, useState } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useCarouselLogic } from "./useCarouselLogic";
-import aliabrar from "../assets/aliabrar.png";
-import taabishahmed from "../assets/taabishahmed.png";
-import hamzabinmajid from "../assets/hamzabinmajid.png";
-import anant from "../assets/anant.png";
+import aliabrar from "../assets/people/aliabrar.png";
+import taabishahmed from "../assets/people/taabishahmed.png";
+import hamzabinmajid from "../assets/people/hamzabinmajid.png";
+import anant from "../assets/people/anant.png";
 const CarouselDisplay = () => {
   const { carouselProps } = useCarouselLogic();
   const people = [

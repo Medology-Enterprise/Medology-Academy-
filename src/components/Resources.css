@@ -1,0 +1,14 @@
+.gradient {
+  background: -webkit-linear-gradient(
+    360deg,
+    #a1fcf8,
+    #49cdc6,
+    #848ef4,
+    #e364f3
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.back {
+  background-color: rgba(17, 18, 21, 1);
+}
