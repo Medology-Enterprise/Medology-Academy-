@@ -31,11 +31,11 @@ import CarouselDisplay from "./Carousel";
 
 const navigation = [
   //Add links
-  { name: "About", href: "#" },
-  { name: "Courses", href: "#" },
-  { name: "Mentoring", href: "#" },
-  { name: "Resources", href: "#" },
-  { name: "Guides", href: "#" },
+  { name: "Home", href: "#" },
+  { name: "Our Team", href: "/team" },
+  { name: "Mentoring", href: "/mentoring" },
+  { name: "Resources", href: "/resources" },
+  { name: "Guides", href: "/guides" },
 ];
 
 const faqs = [
@@ -70,11 +70,11 @@ const faqs = [
 const navfooter = {
   //add links
   menu: [
-    { name: "About", href: "#" },
-    { name: "Courses", href: "#" },
-    { name: "Mentoring", href: "#" },
-    { name: "Resources", href: "#" },
-    { name: "Guides", href: "#" },
+    { name: "About", href: "/" },
+    { name: "Courses", href: "/courses" },
+    { name: "Mentoring", href: "/mentoring" },
+    { name: "Resources", href: "/resources" },
+    { name: "Guides", href: "/guides" },
   ],
   information: [
     { name: "Privacy Policy", href: "#" },
@@ -216,7 +216,7 @@ function Hero() {
                       <img src={about} alt="" className="w-6 h-6" />
                       <a
                         //add link
-                        href="#"
+                        href="/"
                         className="-mt-1 mb-5 ml-8 text-xl font-normal text-color leading-7 hover:text-white"
                       >
                         About
@@ -225,8 +225,7 @@ function Hero() {
                     <div className="flex">
                       <img src={courses} alt="" className="w-6 h-6" />
                       <a
-                        //add link
-                        href="#"
+                        href="/courses"
                         className="-mt-1 mb-5 ml-8 text-xl font-normal text-color leading-7 hover:text-white"
                       >
                         Courses
@@ -235,8 +234,7 @@ function Hero() {
                     <div className="flex">
                       <img src={mentoring} alt="" className="w-6 h-6" />
                       <a
-                        //add link
-                        href="#"
+                        href="/mentoring"
                         className="-mt-1 mb-5 ml-8 text-xl font-normal text-color leading-7 hover:text-white"
                       >
                         Mentoring
@@ -246,7 +244,7 @@ function Hero() {
                       <img src={resources} alt="" className="w-6 h-6" />
                       <a
                         //add link
-                        href="#"
+                        href="/resources"
                         className="-mt-1 mb-5 ml-8 text-xl font-normal text-color leading-7 hover:text-white"
                       >
                         Resources
@@ -255,8 +253,7 @@ function Hero() {
                     <div className="flex">
                       <img src={guides} alt="" className="w-6 h-6" />
                       <a
-                        //add link
-                        href="#"
+                        href="guides"
                         className="-mt-1 mb-5 ml-8 text-xl font-normal text-color leading-7 hover:text-white"
                       >
                         Guides
@@ -296,7 +293,7 @@ function Hero() {
                 education into an <br />
                 <span className="gradient">experience.</span>
               </h1>
-              <p className="mt-4 text-md leading-8 text-white">
+              <p className="mt-4 font-semibold text-lg leading-8 text-white">
                 lorem ipsum san dolor.
               </p>
               <div className="mt-4 flex items-center justify-center gap-x-6">

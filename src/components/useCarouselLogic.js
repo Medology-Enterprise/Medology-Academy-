@@ -1,8 +1,4 @@
 import { useEffect, useState } from "react";
-import aliabrar from "../assets/aliabrar.png";
-import taabishahmed from "../assets/taabishahmed.png";
-import hamzabinmajid from "../assets/hamzabinmajid.png";
-import anant from "../assets/anant.png";
 
 export const useCarouselLogic = () => {
   const [isMobile, setIsMobile] = useState(false);
