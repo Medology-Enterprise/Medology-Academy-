@@ -58,7 +58,7 @@ const people = [
     name: "Aman Sabih",
     education: "DFT Year",
     imageUrl: aman,
-    subject: "chemistry",
+    subject: "biology",
     description:
       "The standard Lorem Ipsum passage is: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
@@ -67,7 +67,7 @@ const people = [
     name: "Ali Abrar",
     education: "University of Oxford",
     imageUrl: aliabrar,
-    subject: "physics",
+    subject: "biology",
     description:
       "The standard Lorem Ipsum passage is: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
@@ -76,27 +76,27 @@ const people = [
     name: "Burak Ayan",
     education: "Academy Teacher",
     imageUrl: burak,
-    subject: "maths",
+    subject: "biology",
     description:
       "The standard Lorem Ipsum passage is: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
   {
     id: 5,
     name: "Tabish Ahmed",
-    education: "DFT Year",
+    education: "University of Sheffield",
     imageUrl: taabishahmed,
     subject: "maths",
     description:
-      "The standard Lorem Ipsum passage is: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Tabish is one of our senior GCSE Biology mentors, and one of the most versatile and naturally talented members of our team. His captivating public speeches and ability to connect with the youth, mouth-watering designs… and constant input of creative energy into The Empire is the one of the main reasons that we’ve been able to advance Medology to where it is today. An inspiration to us all.",
   },
   {
     id: 6,
     name: "Hamza Bin-Majid",
     education: "University of Manchester",
     imageUrl: hamzabinmajid,
-    subject: "physics",
+    subject: "biology",
     description:
-      "The standard Lorem Ipsum passage is: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Hamza is the A2 Biology wizard and the man at the helm of the Medology Academy. There’s many amazing traits that he possesses, but by far the most outstanding one is the way he can find the most innovative solutions to any problem. He’s probably the best teacher in the entire team too, with the way that he can find an analogy to help you understand the most difficult of concepts. Hamza is truly a Principled Lion.",
   },
   {
     id: 7,
@@ -106,6 +106,222 @@ const people = [
     subject: "biology",
     description:
       "The standard Lorem Ipsum passage is: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  },
+  {
+    id: 8,
+    name: "Aelina Mousa",
+    education: "University of Southampton",
+    imageUrl: anant,
+    subject: "biology",
+    description:
+      "Aelina is the glue in the GCSE Biology Team, and actually, Medology as a whole. She keeps everyone happy and gelled, and makes sure we’re running like a well oiled machine. Her ability to connect with people is out of this world, and she’s an example we can all learn the art of managing relationships extremely well from. We’ve also nicknamed her Corp, because she’s a boss.",
+  },
+  {
+    id: 8,
+    name: "Amin Hashmi",
+    education: "University of Glasgow",
+    imageUrl: anant,
+    subject: "biology",
+    description:
+      "Amin is one of our senior A Level Biology mentors, but he’s so much more than that. We see him as the Captain of the Medology Ship, leading us through both calm waters and treacherous storms on our journey to build up the Empire. He dips his toes across all the different wings of Medology, keeping the team nicely aligned and constantly planting our flag into new territory. Jack of all trades and master of all, The Future is looking bright with Amin’s vision locked onto it!",
+  },
+  {
+    id: 9,
+    name: "Auyoon Iqbal",
+    education: "University of Plymouth",
+    imageUrl: anant,
+    subject: "biology",
+    description:
+      "The best adjective to describe Auyoon with is - bubbly. She just brings that energy to her students and is someone who gets the best out of the people around her. What’s her secret? Well, we think it’s the strong mindset that she has. You’ll have to meet her to find out. When she’s not being a bubble machine, you’ll probably find Auyoon traversing through nature, travelling to a random country… or picking up a new language!",
+  },
+  {
+    id: 10,
+    name: "Etas Ali",
+    education: "University College London",
+    imageUrl: anant,
+    subject: "biology",
+    description:
+      "Etas Ali proudly carries the title of Unique Wali. Her rich life experiences and passion for teaching make her an ideal mentor for the next generation of Medology students. Some would say she’s on a mission to rock your world. In the rare occasions that Etas manages to catch a break, you’ll probably find her either drinking Desi Chai, watching Pakistani Dramas, or crying over Pakistan’s latest cricketing disappointment.",
+  },
+  {
+    id: 11,
+    name: "Isra Parwez",
+    education: "King’s College London",
+    imageUrl: anant,
+    subject: "biology",
+    description:
+      "At this moment in time, we’re munching through buckets and buckets of popcorn, watching and cheering Isra on through her mission to become a polyglot! But is that all there is to Isra? Nah! She’s a very cheery and enthusiastic individual, always smiling and adding positive vibes wherever she goes. Her passion for Medicine and teaching GCSE Biology is clear and we have full faith that she’s going to develop into one of the leading doctors of tomorrow.",
+  },
+  {
+    id: 12,
+    name: "Janina Kugathasan",
+    education: "University of Edinburgh",
+    imageUrl: anant,
+    subject: "biology",
+    description:
+      "Janina is a very goal-driven individual who loves putting herself in new experiences and challenges. She’s always willing to learn and grow while still remaining genuine and true to herself - her principle is to act from the heart and she puts her soul into all that she does. Some would say Janina is one of the most balanced members of the team! We can’t wait to see the impact she leaves.",
+  },
+  {
+    id: 13,
+    name: "Kirat Dhillon",
+    education: "University of Bristol",
+    imageUrl: anant,
+    subject: "biology",
+    description:
+      "Kirat absolutely radiates positive energy and good vibes to not just Tribe A, but to the rest of the Medology team too! Her approachable nature works a charm at getting on a level with her students and her relatable insights are yet another thing they love her for. Kirat’s presence in the team is like a refreshing breeze, infusing it with vitality, and as she’d probably put it herself - she simply slays every day",
+  },
+  {
+    id: 14,
+    name: "Radeya Miah",
+    education: "Edge Hill University",
+    imageUrl: anant,
+    subject: "biology",
+    description:
+      "The R in Radeya stands for reliable. Rain, sun, moon or shine… you know Radeya will turn up to deliver, day in, day out. Her drive to get stuck in with everything that we do at the Medology Academy makes her the dream team member, and we’re all so proud of her achievements till now!",
+  },
+  {
+    id: 15,
+    name: "Rawen Ibrahim",
+    education: "Anglia Ruskin University",
+    imageUrl: anant,
+    subject: "biology",
+    description:
+      "Rawen really is a Medology superstar, and the GCSE Biology GOAT. Regardless of staying lowkey… she gets the work done. Not only that, but to an amazing standard. Her students constantly describe her as dedicated, committed and striving for perfection! Not only that, but she’s incredibly motivated to develop herself in every way possible, especially for the betterment of the people around her, especially you, the Medology Lions!",
+  },
+  {
+    id: 16,
+    name: "Soha Khan",
+    education: "University of Sheffield",
+    imageUrl: anant,
+    subject: "biology",
+    description:
+      "Soha can click with anyone on the planet. Her open mindedness, positive mentality and wide range of hobbies and interests verily and truly make her The People’s Warrior. During her time as a student, she was one of the best… adding life to the community, and now as a member of our team, she’s here to make sure that future generations of Medology Lions have an even better experience!",
+  },
+  {
+    id: 17,
+    name: "Sonia Mengal",
+    education: "Dental Student",
+    imageUrl: anant,
+    subject: "biology",
+    description:
+      "Sonia is known for her ever-present smile and deep passion for storytelling - perhaps the most powerful combination of attributes of anyone on the team! With her infectious enthusiasm and genuine joy, Sonia is sure to create an unbreakable bond with anyone fortunate enough to be her student. We’re very excited to see her share her talents with her A Level Biology students!",
+  },
+  {
+    id: 18,
+    name: "Subhan Khan",
+    education: "University of Southampton",
+    imageUrl: anant,
+    subject: "biology",
+    description:
+      "S Khan, also known as The Shahzada, is the living and breathing avatar of the English noun, enigma. It’s almost like that word in the M Webster dictionary was created for him. This man is like no other. Whether it’s his novel perspectives on the issues plaguing our society and youth today, or general reflections on life… you could listen to him all day. That’s not all there is to Subhan though, but words cannot do him justice. He didn’t come to play the game. He came to change it. Do not judge this man on first contact.",
+  },
+  {
+    id: 19,
+    name: "Ammar Motala",
+    education: "Imperial College London",
+    imageUrl: anant,
+    subject: "chemistry",
+    description:
+      "Motala is versatile. Motala is many things. Sometimes you’ll find Motala on the ground being an absolute inspiration to the next generation, and other times you’ll find Motala working hard behind the scenes sending seismic waves throughout the Medology World. Motala is like an onion that we’re still peeling, waiting to see what truly lies at the core. Motala, Motala.",
+  },
+  {
+    id: 20,
+    name: "Badriyah Islam",
+    education: "Imperial College London",
+    imageUrl: anant,
+    subject: "chemistry",
+    description:
+      "Badriyah is everything. Medical student, university society leader, professional photographer, charity ambassador, tutor, teacher, mentor… she’s truly got one of the most diverse portfolios in the Medology team. As one of our most senior team members, we’ve always been very proud to have her in our ranks, and she’s certainly someone that we all look up to.",
+  },
+  {
+    id: 21,
+    name: "George Ashton",
+    education: "Academy Mentor",
+    imageUrl: anant,
+    subject: "chemistry",
+    description:
+      "George is probably the deepest thinker on the team. Some would say philosopher, whilst others would say he’s going to shape the world. Whatever it is, he is 1 special human. He describes himself a somebody who is introspective and is excited by meeting new people, learning from them in the process. George really is somebody who will also go to immense levels to make sure you feel supported through your academic journey!",
+  },
+  {
+    id: 22,
+    name: "Haroon Hussain",
+    education: "Queen’s University, Belfast",
+    imageUrl: anant,
+    subject: "chemistry",
+    description:
+      "Haroon moved from Preston to Belfast to study Dentistry, but really he’s on an undercover mission to figure out how Medology can infiltrate Irish Land to expand The Empire. Do you know what really makes Haroon special though? He’s an eager beaver, a Chemistry wizard… and he’s in this team to do powerful things.",
+  },
+  {
+    id: 23,
+    name: "Laiba Sheikh",
+    education: "University of Leeds",
+    imageUrl: anant,
+    subject: "chemistry",
+    description:
+      "Laiba is like a grenade. You can throw her anywhere, and she will detonate… causing tectonic ripples. What do we mean by that? We mean that she has the ability, and proven track record, to create magical moments at Medology. Explosions. There’s not enough space to list them out here, but what we will say is that she’s been one of the leading mentors since Day 1, and most certainly one of the bedrocks of the A Level Chemistry team.",
+  },
+  {
+    id: 24,
+    name: "Maria Yusufi",
+    education: "University of Manchester",
+    imageUrl: anant,
+    subject: "chemistry",
+    description:
+      "What we love about Maria is how she’s not afraid to jump head on into anything that Medology does. She will follow Medology to the ends of the Earth. The most loyal warrior we have in our ranks, which coupled together with her noble ambitions and lofty goals… make her the life and soul of the mission we have at Medology. We can only imagine how much of an impact she leaves on her students. ",
+  },
+  {
+    id: 25,
+    name: "Naoseen Alam",
+    education: "Dental Student",
+    imageUrl: anant,
+    subject: "chemistry",
+    description:
+      "The bubbly one. Her energy is infectious and she’s the type of person who knows how to instil confidence into anyone she crosses paths with. But, she’s also hard working and a mentor you can place full trust in. She carries herself like an absolute Boss Woman and we’re proud to have her with us in the GCSE Chemistry team :) ",
+  },
+  {
+    id: 26,
+    name: "Raahim Omer",
+    education: "University of Leicester",
+    imageUrl: anant,
+    subject: "chemistry",
+    description:
+      "Raahim is an absolute chiller. You’ll never catch him stressing but he’ll still pull through every single time. While everyone’s keeping up with life, life’s keeping up with Raahim. Be it an interview or a speech to a crowd, this man will be as cool as a cucumber. That’s great, but what does that mean for the people around him? Raahim is going to make it his mission to transfuse that same ice-cold mentality into everyone he touches.",
+  },
+  {
+    id: 27,
+    name: "Samira Ali",
+    education: "Hull York Medical School",
+    imageUrl: anant,
+    subject: "chemistry",
+    description:
+      "Samira puts her mind, heart, and soul into the things and people she cares for. The positive, heartfelt vibes you get from Samira are instant and lasting. There’s never a demotivated moment when you’re around her (or a dull one for that matter). Feeling down or upset? Samira is the one-stop doc for mental rejuvenation.",
+  },
+  {
+    id: 28,
+    name: "Taslima Bushra",
+    education: "Queen Mary, University of London",
+    imageUrl: anant,
+    subject: "chemistry",
+    description:
+      "Taslima brings the excitement to the Medology Academy. Always questioning decisions, making us think further and never leaving a stone unturned. She also has an incredible creative edge which all of team is inspired by. Taslima is also somebody who is renowned for putting heart and soul into each and every one of her students, instilling in them confidence and a desire to really improve as individuals!",
+  },
+  {
+    id: 29,
+    name: "Youssef Mohamed",
+    education: "University of Manchester",
+    imageUrl: anant,
+    subject: "chemistry",
+    description:
+      "For Youssef, we think the best way to describe him is with a haiku: ‘smart and serious, chilled yet charismatic, a Medology asset’. His personable character and genuineness as a speaker shine bright and when he shares his thoughts he embodies the mantra of ‘quality over quantity’. His mission is simple - to make the day brighter for everyone around him, and that goes double for his future students!",
+  },
+  {
+    id: 30,
+    name: "Zara Mansukhani",
+    education: "University of Nottingham",
+    imageUrl: anant,
+    subject: "chemistry",
+    description:
+      "Zara is a natural-born conquerer with lion-like confidence. Zara is a woman of action. She knows what she wants and she’ll put her full mind to it. She’s already conquered academia and she’s opted for a much greater challenge… what is that you may ask? To help Medology continue to change the game and make A Level Chemistry a smooth, buttery ride",
   },
   // More people...
 ];

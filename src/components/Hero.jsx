@@ -200,7 +200,7 @@ function Hero() {
             onClose={setMobileMenuOpen}
           >
             <div className="fixed inset-0 z-[999]" />
-            <Dialog.Panel className="fixed left-40 inset-y-0 right-0 z-[999] lg:w-full overflow-y-auto bg-color px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <Dialog.Panel className="fixed left-[18rem] inset-y-0 right-0 z-[999] lg:w-full overflow-y-auto bg-color px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
               <button
                 type="button"
                 className="-m-2.5 rounded-md p-2.5 text-white font-semibold absolute right-8"
