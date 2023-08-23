@@ -31,7 +31,7 @@ import CarouselDisplay from "./Carousel";
 
 const navigation = [
   //Add links
-  { name: "Home", href: "#" },
+  { name: "Home", href: "/home" },
   { name: "Our Team", href: "/team" },
   { name: "Mentoring", href: "/mentoring" },
   { name: "Resources", href: "/resources" },
@@ -70,7 +70,7 @@ const faqs = [
 const navfooter = {
   //add links
   menu: [
-    { name: "About", href: "/" },
+    { name: "About", href: "/home" },
     { name: "Courses", href: "/courses" },
     { name: "Mentoring", href: "/mentoring" },
     { name: "Resources", href: "/resources" },
@@ -286,9 +286,9 @@ function Hero() {
         </header>
 
         <div className="relative photo isolate px-6 pt-14 -mb-14 lg:px-8">
-          <div className="mx-auto max-w-2xl py-28 sm:py-32 lg:py-36">
+          <div className="mx-auto max-w-7xl py-28 sm:py-32 lg:py-36">
             <div className="text-center">
-              <h1 className="text-4xl -mt-14 font-bold tracking-tight text-white sm:text-6xl">
+              <h1 className="text-5xl -mt-16 font-bold tracking-tight text-white sm:text-7xl">
                 Turning <br />
                 education into an <br />
                 <span className="gradient">experience.</span>
@@ -296,10 +296,10 @@ function Hero() {
               <p className="mt-4 font-semibold text-lg leading-8 text-white">
                 lorem ipsum san dolor.
               </p>
-              <div className="mt-4 flex items-center justify-center gap-x-6">
+              <div className="lg:mb-6 mt-4 flex items-center justify-center gap-x-6">
                 <a
                   href="#"
-                  className="rounded-full w-28 color-primary px-3.5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  className=" rounded-full w-28 color-primary px-5 py-3 text-sm font-semibold text-white shadow-sm"
                 >
                   View All <span aria-hidden="true">→</span>
                 </a>
@@ -312,11 +312,11 @@ function Hero() {
         className="pb-12 sm:pb-16 z-50 color"
       >
         <div className="relative mx-6 px-6 lg:px-6">
-          <div className="mt-10 lg:-mt-16 lg:mx-80 rounded-lg bg-white transition-all duration-300 xs:mx-auto md:mx-auto sm:mt-10 md:mt-10 sm:mx-auto flex justify-center h-72 border-black">
+          <div className="mt-10 lg:-mt-16 lg:mx-80 rounded-2xl bg-white transition-all duration-300 xs:mx-auto md:mx-auto sm:mt-10 md:mt-10 sm:mx-auto flex justify-center h-72 border-black">
             <img
               src={thumbnail}
               alt="img/clips"
-              className="relative inset-0 flex object-cover w-full h-full top-0 left-0 right-0 rounded-lg opacity-100 z-10 transition-opacity duration-500"
+              className="relative inset-0 flex object-cover w-full h-full top-0 left-0 right-0 rounded-2xl opacity-100 z-10 transition-opacity duration-500"
             />
             <div className="bg-white/75 blur-effect-theme absolute mx-auto top-[6rem] lg:top-28 lg:left-[1rem] sm:top-24 sm:left-30 right-30 lg:right-0 opacity-100 z-50 w-16 h-16 md:w-12 md:h-12 sm:h-14 sm:w-14 flex items-center justify-center rounded-full">
               <svg
@@ -348,16 +348,16 @@ function Hero() {
         className="color py-8 sm:py-6"
       >
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:text-center">
+          <div className="mx-auto max-w-none lg:text-center">
             <h2 className="text-sm text-center font-bold leading-7 tracking-widest">
               HOW DO WE <span className="text-color-primary">HELP?</span>
             </h2>
-            <p className="mt-2 text-3xl lg:text-5xl font-bold tracking-tighter text-gray-900 text-center sm:text-4xl">
+            <p className="mx-[2rem] lg:mx-[10rem] mt-2 text-3xl lg:text-5xl font-bold tracking-tighter text-gray-900 text-center sm:text-4xl">
               Sometimes, you just need that
               <span className="text-color-primary"> extra support</span> outside
               of class.
             </p>
-            <p className="mt-6 text-sm text-center text-gray-600">
+            <p className=" lg:mx-[7rem] mt-6 text-sm text-center text-gray-600">
               But where do you get it from? There’s so many people out there, so
               who do you choose? That’s the eternal problem that many a student
               and parent faces over the course of the academic journey. We
@@ -371,7 +371,7 @@ function Hero() {
                 <div className="flex h-10 w-10 items-center justify-center">
                   <img className="mb-8" src={live} alt="" />
                 </div>
-                <dt className="text-xl font-bold leading-7 text-gray-900">
+                <dt className="text-2xl font-bold leading-7 text-gray-900">
                   Live Classes
                 </dt>
                 <dd className="mt-2 text-base leading-5 text-gray-600">
@@ -380,7 +380,7 @@ function Hero() {
                   content, refine your exam technique and make sure you’re on
                   track with revision.
                 </dd>
-                <button className="absolute bottom-3 left-20 lg:bottom-6 lg:left-[8rem] border rounded-3xl mt-5">
+                <button className="absolute bottom-3 lg:bottom-6 border rounded-3xl mt-5">
                   Learn More
                 </button>
               </div>
@@ -389,7 +389,7 @@ function Hero() {
                 <div className="flex h-10 w-10 items-center justify-center">
                   <img className="mb-8" src={events} alt="" />
                 </div>
-                <dt className="text-xl font-bold leading-7 text-gray-900">
+                <dt className="text-2xl font-bold leading-7 text-gray-900">
                   Events
                 </dt>
                 <dd className="mt-2 text-base leading-5 text-gray-600">
@@ -398,7 +398,7 @@ function Hero() {
                   you the best advice possible across the entire educational
                   journey.
                 </dd>
-                <button className="absolute bottom-3 left-20 lg:bottom-6 lg:left-[8rem] border rounded-3xl mt-5">
+                <button className="absolute bottom-3 lg:bottom-6 border rounded-3xl mt-5">
                   Learn More
                 </button>
               </div>
@@ -407,7 +407,7 @@ function Hero() {
                 <div className="flex h-10 w-10 items-center justify-center">
                   <img className="mb-8" src={mentor} alt="" />
                 </div>
-                <dt className="text-xl font-bold leading-7 text-gray-900">
+                <dt className="text-2xl font-bold leading-7 text-gray-900">
                   Mentoring
                 </dt>
                 <dd className="mt-2 text-base leading-5 text-gray-600">
@@ -416,7 +416,7 @@ function Hero() {
                   you up with a mentor on our team and place you in safest hands
                   possible to achieve grades.
                 </dd>
-                <button className="absolute bottom-3 left-20 lg:bottom-6 lg:left-[8rem] border rounded-3xl mt-5">
+                <button className="absolute bottom-3 lg:bottom-6 border rounded-3xl mt-5">
                   Learn More
                 </button>
               </div>
@@ -425,7 +425,7 @@ function Hero() {
                 <div className="flex h-10 w-10 items-center justify-center">
                   <img className="mb-8" src={resource} alt="" />
                 </div>
-                <dt className="text-xl font-bold leading-7 text-gray-900">
+                <dt className="text-2xl font-bold leading-7 text-gray-900">
                   Resources
                 </dt>
                 <dd className="mt-2 text-base leading-5 text-gray-600">
@@ -434,7 +434,7 @@ function Hero() {
                   topic? We have it all, and more! You don’t need to go anywhere
                   else.
                 </dd>
-                <button className="absolute bottom-3 left-20 lg:bottom-6 lg:left-[8rem] border rounded-3xl mt-5">
+                <button className="absolute bottom-3 lg:bottom-6 border rounded-3xl mt-5">
                   Learn More
                 </button>
               </div>
@@ -450,12 +450,12 @@ function Hero() {
             <p className="mt-4 text-sm font-bold leading-8 tracking-widest text-white">
               OUR <span className="text-color-secondary">TEAM</span>
             </p>
-            <h2 className="mt-3 text-4xl font-extrabold tracking-tight text-white lg:text-5xl">
+            <h2 className="mt-2 text-4xl font-extrabold tracking-tight text-white lg:text-5xl">
               <span className="text-color-primary">Who's behind</span> all this?
             </h2>
           </div>
           <div className="lg:ml-[7rem] px-2 mr-[5rem] gap-x-20 sm:ml-[1rem] md:ml-[1rem] sm:block lg:flex">
-            <p className="font-light text-white text-base mt-4 ">
+            <p className="font-light text-slate-300 text-sm mt-4 ">
               We’re a team of university students across the country with years
               of tutoring experience, and helping students achieve top grades.
               There is no better group of individuals to support you through the
@@ -593,7 +593,7 @@ function Hero() {
                   back to you as soon as we can!
                 </p>
               </div>
-              <dl className="mt-4 text-base w-[34rem] text-black flex gap-x-1 lg:gap-x-2">
+              <dl className="mt-8 text-base w-[34rem] text-black flex gap-x-1 lg:gap-x-2">
                 <button className="mt-6 rounded-full border-teal-600 border-2 color px-1 py-2 lg:px-2 lg:py-3 sm:px-2 sm:py-3 text-base font-semibold">
                   <div className="flex mx-2">
                     <EnvelopeIcon
@@ -744,7 +744,7 @@ function Hero() {
                     <h3 className="text-lg text-color-primary font-semibold leading-6 mt-10">
                       Menu
                     </h3>
-                    <ul role="list" className="mt-4 space-y-3">
+                    <ul role="list" className="mt-4 space-y-2">
                       {navfooter.menu.map((item) => (
                         <li key={item.name}>
                           <a
@@ -761,7 +761,7 @@ function Hero() {
                     <h3 className="text-lg text-color-primary font-semibold leading-6">
                       Information
                     </h3>
-                    <ul role="list" className="mt-4 space-y-3">
+                    <ul role="list" className="mt-4 space-y-2">
                       {navfooter.information.map((item) => (
                         <li key={item.name}>
                           <a

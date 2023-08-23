@@ -14,7 +14,7 @@ import "./Resources.css";
 
 const navigation = [
   //Add links
-  { name: "Home", href: "/" },
+  { name: "Home", href: "/home" },
   { name: "Our Team", href: "/team" },
   { name: "Mentoring", href: "/mentoring" },
   { name: "Resources", href: "/resources" },
@@ -24,7 +24,7 @@ const navigation = [
 const navfooter = {
   //add links
   menu: [
-    { name: "About", href: "/" },
+    { name: "About", href: "/home" },
     { name: "Courses", href: "/courses" },
     { name: "Mentoring", href: "/mentoring" },
     { name: "Resources", href: "/resources" },
@@ -246,7 +246,7 @@ const Resources = () => {
               <h1 className="lg:text-8xl font-bold tracking-tighter text-white sm:text-6xl">
                 <span className="gradient">Coming Soon.</span>
               </h1>
-              <p className="mt-4 font-semibold text-lg leading-8 text-white px-6">
+              <p className="mt-8 font-semibold text-md leading-8 text-slate-400 px-6">
                 We are going to launch our Resources page Very Soon.
                 <br /> Stay Tuned.
               </p>

@@ -20,7 +20,7 @@ function App() {
                 </>
               }
             />
-            <Route exact path="/" element={<Hero />} />
+            <Route exact path="/home" element={<Hero />} />
             <Route exact path="/team" element={<Team />} />
             <Route exact path="/mentoring" element={<Mentoring />} />
             <Route exact path="/resources" element={<Resources />} />

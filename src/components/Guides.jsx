@@ -20,7 +20,7 @@ import lion from "../assets/lion.png";
 
 const navigation = [
   //Add links
-  { name: "Home", href: "/" },
+  { name: "Home", href: "/home" },
   { name: "Our Team", href: "/team" },
   { name: "Mentoring", href: "/mentoring" },
   { name: "Resources", href: "/resources" },
@@ -30,7 +30,7 @@ const navigation = [
 const navfooter = {
   //add links
   menu: [
-    { name: "About", href: "/" },
+    { name: "About", href: "/home" },
     { name: "Courses", href: "/courses" },
     { name: "Mentoring", href: "/mentoring" },
     { name: "Resources", href: "/resources" },
@@ -471,7 +471,7 @@ const Guides = () => {
                     <h3 className="text-lg text-color-primary font-semibold leading-6 mt-10">
                       Menu
                     </h3>
-                    <ul role="list" className="mt-4 space-y-3">
+                    <ul role="list" className="mt-4 space-y-2">
                       {navfooter.menu.map((item) => (
                         <li key={item.name}>
                           <a
@@ -488,7 +488,7 @@ const Guides = () => {
                     <h3 className="text-lg text-color-primary font-semibold leading-6">
                       Information
                     </h3>
-                    <ul role="list" className="mt-4 space-y-3">
+                    <ul role="list" className="mt-4 space-y-2">
                       {navfooter.information.map((item) => (
                         <li key={item.name}>
                           <a

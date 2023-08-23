@@ -26,7 +26,7 @@ import "./Hero.css";
 
 const navigation = [
   //Add links
-  { name: "Home", href: "/" },
+  { name: "Home", href: "/home" },
   { name: "Our Team", href: "/team" },
   { name: "Mentoring", href: "/mentoring" },
   { name: "Resources", href: "/resources" },
@@ -35,7 +35,7 @@ const navigation = [
 const navfooter = {
   //add links
   menu: [
-    { name: "About", href: "/" },
+    { name: "About", href: "/home" },
     { name: "Courses", href: "/courses" },
     { name: "Mentoring", href: "/mentoring" },
     { name: "Resources", href: "/resources" },
@@ -284,7 +284,7 @@ const Mentoring = () => {
         className="pb-12 mt-8 sm:pb-16 z-50 color"
       >
         <div className="relative mx-6 px-6 lg:px-6">
-          <div className="mt-10 shadow-md lg:-mt-16 lg:mx-60 rounded-lg bg-white xs:mx-auto md:mx-auto sm:mt-10 md:mt-10 sm:mx-auto flex justify-center h-32 border-black">
+          <div className="mt-10 shadow-md lg:-mt-16 lg:mx-60 rounded-lg bg-white md:mx-auto sm:mt-10 md:mt-10 sm:mx-auto flex justify-center h-44 sm:h-32 border-black">
             <p className="text-black my-auto px-8 text-center text-lg font-semibold">
               If you or your child would like a regular, long-term arrangement
               for academic support with one of our team, then keep reading!
@@ -308,7 +308,7 @@ const Mentoring = () => {
             <p className="text-2xl font-bold tracking-tight text-center w-[18rem]">
               Fill In The Form Below With Your Requirements.
             </p>
-            <p className="mt-4 text-md text-gray-600 font-d tracking-tight text-center">
+            <p className="mt-4 text-md text-gray-600 tracking-tight text-center">
               Tell us about your situation and what sort of help you’re looking
               for.
             </p>
@@ -323,7 +323,7 @@ const Mentoring = () => {
             <p className="text-2xl font-bold tracking-tight text-center w-[18rem]">
               We’ll match you up with the best person in our team for you.
             </p>
-            <p className="mt-4 text-md text-gray-600 font-d tracking-tight text-center">
+            <p className="mt-4 text-md text-gray-600 tracking-tight text-center">
               They’re ready to support you by any means necessary.
             </p>
           </div>
@@ -337,7 +337,7 @@ const Mentoring = () => {
             <p className="text-2xl font-bold tracking-tight text-center w-[18rem]">
               Watch your academic performance skyrocket.
             </p>
-            <p className="mt-4 text-md text-gray-600 font-d tracking-tight text-center">
+            <p className="mt-4 text-md text-gray-600 tracking-tight text-center">
               You’ll have regular sessions with your mentor and feel the
               difference.
             </p>
@@ -404,7 +404,7 @@ const Mentoring = () => {
           The
           <span className="text-color-primary"> Form</span>
         </p>
-        <div className="mt-12 mx-auto lg:mx-[20rem] max-w-lg lg:max-w-none">
+        <div className="mt-12 mx-4 sm:mx-auto lg:mx-[20rem] max-w-lg lg:max-w-none">
           <form action="#" method="POST" className="grid grid-cols-1 gap-y-6">
             <div>
               <label htmlFor="name" className="sr-only">
@@ -580,7 +580,7 @@ const Mentoring = () => {
             <div className="mx-auto">
               <button
                 type="submit"
-                className="inline-flex justify-center rounded-full border-transparent bg-teal-600 px-8 py-3 text-base font-medium text-white shadow-sm"
+                className="inline-flex w-[8rem] justify-center rounded-full border-transparent bg-teal-600 px-8 py-3 text-base font-medium text-white shadow-sm"
               >
                 Submit
               </button>
@@ -648,7 +648,7 @@ const Mentoring = () => {
                     <h3 className="text-lg text-color-primary font-semibold leading-6 mt-10">
                       Menu
                     </h3>
-                    <ul role="list" className="mt-4 space-y-3">
+                    <ul role="list" className="mt-4 space-y-2">
                       {navfooter.menu.map((item) => (
                         <li key={item.name}>
                           <a
@@ -665,7 +665,7 @@ const Mentoring = () => {
                     <h3 className="text-lg text-color-primary font-semibold leading-6">
                       Information
                     </h3>
-                    <ul role="list" className="mt-4 space-y-3">
+                    <ul role="list" className="mt-4 space-y-2">
                       {navfooter.information.map((item) => (
                         <li key={item.name}>
                           <a

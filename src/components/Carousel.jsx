@@ -116,7 +116,7 @@ const CarouselDisplay = () => {
               <p className="flex justify-start text-sm mb-2 font-semibold leading-6 text-color-primary">
                 {person.education}
               </p>
-              <p className="flex justify-start text-sm leading-5 text-white">
+              <p className="flex justify-start text-xs tracking-wide text-left text-slate-300">
                 {person.description}
               </p>
             </div>

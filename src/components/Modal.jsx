@@ -1,13 +1,12 @@
 import React from "react";
 import close from "../assets/close.png";
-import LinkedIn from "../assets/LinkedIn.png";
 
 const Modal = ({ closeModal, people }) => {
   return (
-    <div className="absolute rounded-md bg-color mx-[10rem] z-[999] lg:h-[24rem] -mt-[50rem]">
-      <div className=" lg:flex">
+    <div className="absolute rounded-md  bg-color mx-[10rem] z-[999] lg:h-[20rem] top-[25rem]">
+      <div className="lg:flex">
         <img
-          className="ml-10 lg:-ml-6 mt-[4rem] rounded-lg"
+          className="w-[15rem] h-[15rem] ml-10 lg:-ml-24 -mt-[4rem] lg:mt-[2rem] rounded-lg"
           src={people.imageUrl}
           alt=""
         />
@@ -26,12 +25,12 @@ const Modal = ({ closeModal, people }) => {
             Team member since 2019
           </p>
           <h3 className="text-white text-md font-semibold mb-2">Bio</h3>
-          <p className="flex justify-start text-sm leading-5 mr-12 text-white">
+          <p className="flex justify-start text-sm leading-5 mr-12 text-slate-300">
             {people.description}
           </p>
         </div>
         <button
-          className="border-none mr-12 rounded-full absolute top-8 right-0"
+          className="border-none mr-12 rounded-full relative bottom-[33rem] left-[18rem] lg:absolute lg:top-8 lg:left-[57rem]"
           onClick={() => {
             closeModal(false);
           }}
