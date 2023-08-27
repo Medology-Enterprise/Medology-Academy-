@@ -450,7 +450,7 @@ const Guides = () => {
         </div>
       </div>
 
-      <div className="color my-4">
+      <div className="color pb-4">
         <footer //footer
           className="bg-black rounded-xl mx-4"
           aria-labelledby="footer-heading"
@@ -484,7 +484,7 @@ const Guides = () => {
                       ))}
                     </ul>
                   </div>
-                  <div className="mt-10 md:mt-0 mb-4 lg:ml-24 w-full lg:-mr-[20rem] ml-[10rem] sm:ml-[14rem]">
+                  <div className="mt-10 md:mt-0 mb-4 lg:ml-24 max-w-2xl lg:-mr-[20rem] ml-[10rem] sm:ml-[14rem]">
                     <h3 className="text-lg text-color-primary font-semibold leading-6">
                       Information
                     </h3>
@@ -502,7 +502,7 @@ const Guides = () => {
                     </ul>
                   </div>
                 </div>
-                <div className="flex lg:mt-64 lg:right-32 -mb-4 space-x-6 sm:right-20 sm:-mt-4 absolute right-10 ">
+                <div className="flex lg:mt-44 lg:right-32 -mb-4 space-x-6 sm:right-24 absolute right-10 ">
                   {navfooter.social.map((item) => (
                     <a
                       key={item.name}

@@ -6,6 +6,7 @@ import { useCarouselLogic } from "./useCarouselLogic";
 import aliabrar from "../assets/people/aliabrar.png";
 import taabishahmed from "../assets/people/taabishahmed.png";
 import hamzabinmajid from "../assets/people/hamzabinmajid.png";
+import Kirat from "../assets/people/Kirat.png";
 import anant from "../assets/people/anant.png";
 const CarouselDisplay = () => {
   const { carouselProps } = useCarouselLogic();
@@ -48,8 +49,7 @@ const CarouselDisplay = () => {
       education: "University of Bristol",
       description:
         "Lorem ipsum dolor sit amet, elit adipiscing consectetur elit",
-      imageUrl:
-        "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+      imageUrl: Kirat,
     },
     // More people...
   ];
@@ -98,7 +98,7 @@ const CarouselDisplay = () => {
           {people.map((person) => (
             <div
               key={person.name}
-              className="lg:w-[16rem] sm:w-[20rem] h-full rounded-2xl bg-color-box px-2 pt-2 pb-4"
+              className="lg:w-[16rem] w-[20rem] h-full rounded-2xl bg-color-box px-2 pt-2 pb-4"
             >
               <img
                 className="h-[16rem] w-64 rounded-xl md:h-[14rem] md:w-[18rem] sm:h-[14rem] sm:w-72"
